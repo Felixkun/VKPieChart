@@ -15,6 +15,8 @@
 		DC51D00B1DF6D25D00066161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC51D0091DF6D25D00066161 /* LaunchScreen.storyboard */; };
 		DC51D0161DF6D25D00066161 /* arcDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC51D0151DF6D25D00066161 /* arcDemoTests.m */; };
 		DC51D0211DF6D25D00066161 /* arcDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC51D0201DF6D25D00066161 /* arcDemoUITests.m */; };
+		DC51D0311DF6E61200066161 /* VKPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DC51D0301DF6E61200066161 /* VKPieChart.m */; };
+		DC51D0351DF6E79700066161 /* VKPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC51D0341DF6E79700066161 /* VKPieChartDataItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		DC51D01C1DF6D25D00066161 /* arcDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arcDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC51D0201DF6D25D00066161 /* arcDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arcDemoUITests.m; sourceTree = "<group>"; };
 		DC51D0221DF6D25D00066161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC51D02F1DF6E61200066161 /* VKPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPieChart.h; sourceTree = "<group>"; };
+		DC51D0301DF6E61200066161 /* VKPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPieChart.m; sourceTree = "<group>"; };
+		DC51D0321DF6E69400066161 /* VKPieChartDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKPieChartDelegate.h; sourceTree = "<group>"; };
+		DC51D0331DF6E79700066161 /* VKPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPieChartDataItem.h; sourceTree = "<group>"; };
+		DC51D0341DF6E79700066161 /* VKPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPieChartDataItem.m; sourceTree = "<group>"; };
+		DC51D0361DF6E89400066161 /* VKChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKChart.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		DC51CFFA1DF6D25D00066161 /* arcDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DC51D02E1DF6E59100066161 /* VKPieChart */,
 				DC51CFFE1DF6D25D00066161 /* AppDelegate.h */,
 				DC51CFFF1DF6D25D00066161 /* AppDelegate.m */,
 				DC51D0011DF6D25D00066161 /* ViewController.h */,
@@ -138,6 +147,19 @@
 				DC51D0221DF6D25D00066161 /* Info.plist */,
 			);
 			path = arcDemoUITests;
+			sourceTree = "<group>";
+		};
+		DC51D02E1DF6E59100066161 /* VKPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				DC51D02F1DF6E61200066161 /* VKPieChart.h */,
+				DC51D0301DF6E61200066161 /* VKPieChart.m */,
+				DC51D0321DF6E69400066161 /* VKPieChartDelegate.h */,
+				DC51D0331DF6E79700066161 /* VKPieChartDataItem.h */,
+				DC51D0341DF6E79700066161 /* VKPieChartDataItem.m */,
+				DC51D0361DF6E89400066161 /* VKChart.h */,
+			);
+			name = VKPieChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC51D0311DF6E61200066161 /* VKPieChart.m in Sources */,
 				DC51D0031DF6D25D00066161 /* ViewController.m in Sources */,
 				DC51D0001DF6D25D00066161 /* AppDelegate.m in Sources */,
+				DC51D0351DF6E79700066161 /* VKPieChartDataItem.m in Sources */,
 				DC51CFFD1DF6D25D00066161 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
